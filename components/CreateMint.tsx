@@ -50,6 +50,8 @@ export const CreateMintForm: FC = () => {
       )
     );
 
+    console.log(TOKEN_PROGRAM_ID.toBase58());
+
     sendTransaction(transaction, connection, {
       signers: [mint],
     }).then((sig) => {

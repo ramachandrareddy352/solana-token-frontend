@@ -6,6 +6,8 @@ import { BalanceDisplay } from "../components/BalanceDisplay";
 import { MintToForm } from "../components/MintToForm";
 import { CreateTokenAccountForm } from "../components/CreateTokenAccount";
 import { CreateMintForm } from "../components/CreateMint";
+import { TransferTokens } from "../components/TransferTokens";
+import { BurnTokens } from "../components/BurnTokens";
 import Head from "next/head";
 
 const Home: NextPage = (props) => {
@@ -22,6 +24,8 @@ const Home: NextPage = (props) => {
           <CreateMintForm />
           <CreateTokenAccountForm />
           <MintToForm />
+          <TransferTokens />
+          <BurnTokens />
         </div>
       </WalletContextProvider>
     </div>
